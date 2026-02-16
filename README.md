@@ -16,17 +16,19 @@ This CLI uses **AppleScript** to talk to **Music.app**. We don’t lock to speci
 
 ## Install
 
-**From npm (after publishing):**
+**Recommended (no global install needed):**
 
 ```bash
-npm install -g applemusic-cli
+npx @thearvindas/applemusic-cli
 ```
 
-**Run without installing:**
+**Optional: install globally** (so `applemusic-cli` works from anywhere):
 
 ```bash
-npx applemusic-cli
+npm install -g @thearvindas/applemusic-cli
 ```
+
+> If `npm install -g` fails with `EACCES` / `permission denied` for your npm global directory, it's a local npm/Node setup issue (not this CLI). In that case, either use `npx` or fix your npm global prefix as described in the official npm docs.
 
 **From source (clone this repo):**
 
@@ -38,7 +40,7 @@ npm run build
 npm link
 ```
 
-Then run `applemusic-cli` from anywhere.
+Then run `applemusic-cli` from anywhere. (The CLI command is still `applemusic-cli` after install.)
 
 ## Usage
 

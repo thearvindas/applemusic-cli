@@ -1,6 +1,6 @@
 {
-  "name": "applemusic-cli",
-  "version": "0.1.0",
+  "name": "@thearvindas/applemusic-cli",
+  "version": "1.0.2",
   "description": "Local-only Apple Music CLI for macOS. Control Music.app via AppleScript — play, pause, now playing, volume, shuffle, repeat, AirPlay.",
   "type": "module",
   "main": "dist/cli.js",
