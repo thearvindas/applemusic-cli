@@ -95,16 +95,13 @@ When output is a TTY you get progress bar, success feedback (e.g. `✓ Playing`)
 
 ## Now playing artwork (ASCII)
 
-When you run `applemusic-cli np` or `/np`, the CLI can show album art as ASCII in the terminal. Artwork is fetched in two ways:
+When you run `applemusic-cli np` or `/np`, the CLI can show album art as ASCII in the terminal. You need **[media-control](https://github.com/ungive/media-control)** installed for artwork to appear (it uses the same system source as the Now Playing widget):
 
-1. **AppleScript** — Works for **library** tracks (songs in your library). Streaming (URL) tracks do not expose artwork data via AppleScript.
-2. **media-control** (optional) — Uses the same system source as the Now Playing widget (MediaRemote). If you install [media-control](https://github.com/ungive/media-control), artwork will also work for **streaming** tracks:
+```bash
+brew install media-control
+```
 
-   ```bash
-   brew install media-control
-   ```
-
-   No config needed; if `media-control` is on your PATH, the CLI will use it when AppleScript doesn't have art.
+Make sure `media-control` is on your PATH. No other config needed.
 
 ## Local only / no API
 
@@ -126,15 +123,6 @@ npm test
 - **`npm run build`** — compile TypeScript to `dist/`
 - **`npm test`** — smoke test all CLI commands (does not require Music.app to be playing)
 
-## Before publishing to npm
-
-Run `npm run build` and `npm test` to confirm everything works.
-
-## Publishing to npm (optional)
-
-1. Create an account at [npmjs.com](https://www.npmjs.com/signup) if you don't have one.
-2. From the project root: `npm login`, then `npm publish`.
-3. After that, anyone can install with `npm install -g applemusic-cli`.
 
 ## License
 
