@@ -26,6 +26,7 @@
     "airplay"
   ],
   "license": "MIT",
+  "files": ["dist", "package.json", "README.md", "LICENSE"],
   "repository": {
     "type": "git",
     "url": "https://github.com/thearvindas/applemusic-cli.git"

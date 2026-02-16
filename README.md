@@ -8,6 +8,12 @@ A local-only command-line interface for **Music.app** on macOS. Control playback
 - **Node.js** 18+
 - **Music.app** (formerly iTunes) with your library
 
+## Compatibility
+
+This CLI uses **AppleScript** to talk to **Music.app**. We don’t lock to specific versions of macOS, Music.app, or AppleScript — Apple can change or remove scripting support in updates, so we can’t guarantee the CLI will work on every past or future release. If something breaks after an OS or Music.app update, it may be due to those changes rather than this project.
+
+**Tested on:** macOS 26.1 Tahoe (25B78) and Music.app 1.6.1.44.
+
 ## Install
 
 **From npm (after publishing):**
